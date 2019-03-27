@@ -1,0 +1,6 @@
+language: c
+sudo: false # only for faster builds
+compiler: gcc
+script:
+  - gcc -o main1 main1.c
+  - ./main1
