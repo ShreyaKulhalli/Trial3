@@ -2,5 +2,17 @@ language: c
 sudo: false # only for faster builds
 compiler: gcc
 script:
+  - gcc -o Auto Auto.c
+  - ./Auto
+script:
+  - gcc -o PWM PWM.c
+  - ./PWM
+script:
+  - gcc -o Manual Manual.c
+  - ./Manual
+script:
+  - gcc -o Battery_check Battery_check.c
+  - ./Battery_check
+script:
   - gcc -o main1 main1.c
   - ./main1
